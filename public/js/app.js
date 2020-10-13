@@ -13,8 +13,8 @@ const getWeather = (location) => {
                 if (weather.error) {
                      errorMessage.textContent = weather.error 
                 } else {
-                    errorMessage.textContent = ''
-                    contentMessage.textContent = 'Location: ' + weather.location + ' Temperature: ' + weather.temperature + ' Feels Like: ' + weather.feelsLike
+                    errorMessage.textContent = location
+                    contentMessage.textContent = weather.response
                 }
         }
     })
